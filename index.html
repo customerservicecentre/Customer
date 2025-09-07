@@ -1,172 +1,162 @@
 <!doctype html>
-
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Fast Refund & Support — Call Now</title>
-  <meta name="description" content="Trusted refund & customer support service. Fast help for order refunds, returns and delivery issues. Call now for instant assistance.">
-  <meta name="robots" content="index,follow">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rohit — Customer Support & Order Help</title>
+  <meta name="description" content="Rohit provides customer support services for online order help, delivery queries and cancellations. Contact by phone or email." />
   <meta name="robots" content="index,follow">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17455854824"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-17455854824');
-</script>
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   <style>
-    :root{--accent:#0b6efd;--dark:#0b2545;--muted:#6b7280;--bg:#f7f9fc}
+    :root{--accent:#ffbf00;--dark:#0b2545;--muted:#566174;--bg:#f6f8fb}
     *{box-sizing:border-box}
-    body{font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,Arial,sans-serif;margin:0;color:#0f1724;background:var(--bg);line-height:1.45}
-    header{background:#fff;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e6eef8;position:sticky;top:0;z-index:100}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{width:42px;height:42px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
-    .brand h1{font-size:16px;margin:0}
-    .phone{font-weight:700;color:var(--dark)}
-    .cta{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
-    .hero{padding:28px 16px;background:linear-gradient(180deg,#ffffff 0%, #f3f7ff 100%);display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+    body{font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,Arial,sans-serif;margin:0;color:#0f1724;background:var(--bg);line-height:1.5}
+    .container{max-width:980px;margin:20px auto;padding:18px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;padding:14px;border-radius:10px;box-shadow:0 6px 20px rgba(12,30,60,0.06)}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#ff8a00);display:flex;align-items:center;justify-content:center;font-weight:800;color:#071129}
+    h1{font-size:18px;margin:0}
+    p.lead{margin:8px 0 0;color:var(--muted)}
+    .contact-small{font-weight:700;color:var(--dark)}
+    .cta{background:var(--accent);color:#071129;padding:10px 14px;border-radius:10px;font-weight:800;text-decoration:none}
+    main{margin-top:18px}
+    .hero{display:flex;flex-wrap:wrap;gap:18px;background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(12,30,60,0.04)}
     .hero-left{flex:1;min-width:260px}
-    .hero h2{font-size:22px;margin:6px 0 8px}
-    .hero p{color:var(--muted);margin:0 0 14px}
-    .big-phone{display:inline-flex;align-items:center;gap:10px;background:#eef6ff;padding:10px 12px;border-radius:10px;color:var(--dark);font-weight:700}
-    .hero-right{flex:0 0 320px;min-width:260px}
-    .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(11,38,77,0.06);}
-    .call-big{display:flex;flex-direction:column;gap:10px}
-    .call-big a{display:inline-block;text-align:center;padding:12px;border-radius:10px;font-weight:700;text-decoration:none}
-    .call-now{background:var(--accent);color:#fff}
-    .whats{background:#eef2ff;color:var(--dark)}
-    main{max-width:1000px;margin:18px auto;padding:0 16px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-    .box{background:#fff;padding:16px;border-radius:10px;border:1px solid #eef4ff}
-    h3{margin:0 0 8px}
-    ul{margin:0;padding-left:18px;color:var(--muted)}
-    .why{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}
-    .footer{margin-top:20px;padding:18px;background:#fff;border-top:1px solid #e6eef8;border-radius:12px}
-    .footer .links{display:flex;gap:12px;flex-wrap:wrap}
-    .bottom-cta{position:fixed;right:16px;bottom:16px;z-index:120}
-    .phone-bubble{background:var(--accent);color:#fff;padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 8px 24px rgba(11,38,77,0.12)}
-    @media(max-width:800px){.grid{grid-template-columns:repeat(1,1fr)}.why{grid-template-columns:repeat(1,1fr)}.hero-right{flex-basis:100%}}
+    .hero-right{width:320px;min-width:220px}
+    .card{background:#fff;padding:14px;border-radius:10px;border:1px solid #eef4ff}
+    .phone-big{display:inline-flex;align-items:center;gap:10px;background:#fff7e6;padding:10px 12px;border-radius:10px;color:var(--dark);font-weight:800;border:1px solid rgba(255,191,0,0.15)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+    .box{background:#fff;padding:14px;border-radius:10px;border:1px solid #eef4ff}
+    footer{margin-top:20px;padding:18px;background:#fff;border-radius:10px;border:1px solid #eef4ff;text-align:center;color:var(--muted)}
+    a{color:var(--accent)}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}.hero{flex-direction:column}.hero-right{width:100%}}
   </style>
+
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"LocalBusiness",
-    "name":"Digila Support Services",
-    "telephone":"+91-8927885467",
-    "url":"https://kavyakarnar.github.io/Digilatonline/",
+    "name":"Rohit",
+    "telephone":"+917294184236",
+    "url":"https://kavyakarnar.github.io/Digitalworld/",
     "address":{
       "@type":"PostalAddress",
-      "addressLocality":"Your City",
+      "streetAddress":"House No-49, Dadri, Achheja",
+      "addressLocality":"Gautam Buddha Nagar",
+      "addressRegion":"Uttar Pradesh",
+      "postalCode":"203207",
       "addressCountry":"IN"
     }
   }
   </script>
+
 </head>
 <body>
-  <header>
-    <div class="brand">
-      <div class="logo">DS</div>
-      <div>
-        <h1>Digila Support Services</h1>
-        <div style="font-size:13px;color:var(--muted)">Fast refund & customer help</div>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">R</div>
+        <div>
+          <h1>Rohit — Customer Support & Order Help</h1>
+          <div class="lead">Phone-first support for online order queries and delivery assistance.</div>
+        </div>
       </div>
-    </div>
-    <div style="display:flex;align-items:center;gap:12px">
-      <div class="phone">Call now: <a href="tel:+91-8927885467" class="phone">+91-XXXXXXXXXX</a></div>
-      <a class="cta" href="tel:+91-XXXXXXXXXX">Call Now</a>
-    </div>
-  </header>  <section class="hero">
-    <div class="hero-left">
-      <h2>Need Fast Refund or Delivery Support?</h2>
-      <p>We help with refunds, returns and delivery issues for online orders. Trusted support team — quick guidance and call assistance.</p>
-      <div class="big-phone">📞 <strong><a href="tel:+91-" style="color:inherit;text-decoration:none">+91-XXXXXXXXXX</a></strong> &nbsp; • &nbsp; Available 09:00‑21:00</div>
-      <div style="margin-top:14px"8927885467>
-        <a class="cta" href="tel:+91-8927885467" style="padding:12px 16px;display:inline-block;margin-right:10px">Tap to Call</a>
-        <a href="#contact" style="text-decoration:none;color:var(--muted);font-weight:700">Message Us</a>
+
+      <div style="text-align:right">
+        <div class="contact-small">Call: <a href="tel:+917294184236">+91 7294184236</a></div>
+        <a class="cta" href="tel:+917294184236" style="margin-top:8px;display:inline-block">Call Now</a>
       </div>
-    </div><div class="hero-right">
-  <div class="card">
-    <div class="call-big">
-      <div style="font-size:14px;color:var(--muted);font-weight:600">Instant Help</div>
-      <h3 style="margin:4px 0">Request a Callback</h3>
-      <p style="color:var(--muted);margin:0 0 8px">Leave your number and we'll call you back within 60 minutes.</p>
-      <form onsubmit="event.preventDefault();alert('Thank you — we will call you back soon.');" style="display:flex;gap:8px;flex-wrap:wrap">
-        <input type="tel" placeholder="Enter mobile number" required style="flex:1;padding:10px;border-radius:8px;border:1px solid #e6eef8">
-        <button class="cta" style="border:none;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff">Request Call</button>
-      </form>
-    </div>
-  </div>
-</div>
+    </header>
 
-  </section>  <main>
-    <section class="grid">
-      <div class="box">
-        <h3>How We Help</h3>
-        <ul>
-          <li>Refund assistance for online orders and payments</li>
-          <li>Order cancellation & return guidance</li>
-          <li>Payment & transaction support</li>
-        </ul>
-      </div>
-      <div class="box">
-        <h3>Why Choose Us</h3>
-        <ul>
-          <li>Fast phone support — experienced team</li>
-          <li>No third‑party branding mentioned</li>
-          <li>Clear, honest guidance — step by step</li>
-        </ul>
-      </div>
-      <div class="box">
-        <h3>Frequently Asked</h3>
-        <ul>
-          <li>How long for refund? — Depends on vendor; we assist to speed it up</li>
-          <li>Do you charge for help? — Transparent pricing discussed on call</li>
-        </ul>
-      </div>
-    </section><section class="why">
-  <div class="box">
-    <h3>Quick Steps</h3>
-    <ol style="color:var(--muted)">
-      <li>Call us or request callback</li>
-      <li>Share order details & screenshots</li>
-      <li>We guide the refund process till completion</li>
-    </ol>
-  </div>
-  <div class="box">
-    <h3>Service Areas</h3>
-    <p style="color:var(--muted);margin:0">Nationwide support — focus on urban metro areas. Mobile-first assistance.</p>
-  </div>
-</section>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-left">
+          <h2 id="hero-title" style="margin:0 0 8px">Need help with an online order?</h2>
+          <p style="margin:0 0 12px;color:var(--muted)">We help customers resolve common order issues, delivery queries and provide guidance over phone and email. Contact us and we'll assist step-by-step.</p>
 
-<section id="contact" style="margin-top:18px">
-  <div class="box">
-    <h3>Contact Us</h3>
-    <p style="color:var(--muted)">Phone: <a href="tel:+91-8927885467">+91-8927885467</a></p>
-    <p style="color:var(--muted)">Email: <a href="mailto:serviceonline7165@gmail.com">serviceonline7165@gmail.com</a></p>
-    <p style="color:var(--muted)">Address: Online Service (City)</p>
+          <div class="phone-big">📞 <a href="tel:+917294184236" style="color:inherit;text-decoration:none">+91 7294184236</a></div>
+
+          <div style="margin-top:14px">
+            <a class="cta" href="tel:+917294184236">Tap to Call</a>
+            <a href="#contact" style="margin-left:12px;color:var(--muted);font-weight:700;text-decoration:none">Message / Email</a>
+          </div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="card">
+            <h3 style="margin:0 0 10px">Request a Callback</h3>
+            <form onsubmit="event.preventDefault();alert('Thank you — we will call you back soon.');">
+              <input type="tel" placeholder="Enter mobile number" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #eef4ff;margin-bottom:10px">
+              <button class="cta" style="width:100%;border:none;padding:10px;border-radius:8px">Request Call</button>
+            </form>
+
+            <p style="color:var(--muted);font-size:13px;margin-top:10px">Office hours: Mon–Sat 09:30 – 19:00</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="grid" aria-label="Services">
+        <div class="box">
+          <h4 style="margin:0 0 8px">Our Services</h4>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Assistance with delivery and tracking queries</li>
+            <li>Guidance for cancellations and order changes</li>
+            <li>General customer support for online purchases</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h4 style="margin:0 0 8px">Why Choose Us</h4>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Phone-first, human support</li>
+            <li>Clear, step-by-step guidance</li>
+            <li>Respect for privacy and data protection</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h4 style="margin:0 0 8px">FAQs</h4>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>How long will it take? — We respond by phone during office hours.</li>
+            <li>Do you share data? — We do not share customer data with third parties.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:18px">
+        <div class="box" style="padding:18px">
+          <h3 style="margin:0 0 8px">Contact & Legal</h3>
+          <p style="margin:0 0 6px;color:var(--muted)"><strong>Phone:</strong> <a href="tel:+917294184236">+91 7294184236</a></p>
+          <p style="margin:0 0 6px;color:var(--muted)"><strong>Email:</strong> <a href="mailto:serviceonline7165@gmail.com">serviceonline7165@gmail.com</a></p>
+          <p style="margin:0 0 6px;color:var(--muted)"><strong>Address:</strong> House No-49, Dadri, Achheja, Gautam Buddha Nagar, Uttar Pradesh - 203207</p>
+          <p style="margin:8px 0 0;color:var(--muted);font-size:13px">Business Name: Rohit (Individual)</p>
+        </div>
+      </section>
+
+      <section style="margin-top:18px">
+        <div class="box">
+          <h4 style="margin:0 0 8px">Privacy Policy</h4>
+          <p style="margin:0;color:var(--muted)">We respect user privacy. Any contact details provided are used only to deliver the requested support and are not shared with third parties except as required by law.</p>
+        </div>
+      </section>
+
+      <section style="margin-top:18px">
+        <div class="box">
+          <h4 style="margin:0 0 8px">Terms & Conditions</h4>
+          <p style="margin:0;color:var(--muted)">By contacting this service you agree to receive phone or email communications related to your request. We provide guidance and support; specific outcomes depend on third-party merchants and partners.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      © <span id="year"></span> Rohit — Customer Support. Email: <a href="mailto:serviceonline7165@gmail.com">serviceonline7165@gmail.com</a>
+    </footer>
   </div>
-</section>
 
-<div class="footer">
-  <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-    <div>
-      <strong>Digila Support Services</strong>
-      <div style="color:var(--muted);font-size:13px">Trusted refund & customer support</div>
-    </div>
-    <div class="links">
-      <a href="#" style="color:var(--muted);text-decoration:none">Privacy Policy</a>
-      <a href="#" style="color:var(--muted);text-decoration:none">Terms & Conditions</a>
-      <a href="#" style="color:var(--muted);text-decoration:none">Refund Policy</a>
-    </div>
-  </div>
-</div>
-
-  </main><a class="phone-bubble bottom-cta" href="tel:+91-8927885467">📞 Call Now</a>
-
-  <footer style="height:40px"></footer>
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
-</html>
+        </html>
